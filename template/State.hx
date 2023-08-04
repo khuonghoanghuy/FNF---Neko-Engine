@@ -1,8 +1,6 @@
-package template;
+package states;
 
-import flixel.FlxState;
-
-class State extends FlxState
+class State extends MusicBeatState
 {
 	// create
 	override public function create()

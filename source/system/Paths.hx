@@ -24,6 +24,11 @@ class Paths
 		return file('data/$key.txt');
 	}
 
+	inline static public function json(key:String)
+	{
+		return file('data/$key.json');
+	}
+
 	inline static public function xml(key:String)
 	{
 		return file('data/$key.xml');
@@ -47,6 +52,16 @@ class Paths
 	inline static public function image(key:String)
 	{
 		return file('images/$key.png');
+	}
+
+	inline static public function inst(song:String)
+	{
+		return 'songs:assets/songs/${song.toLowerCase()}/Inst.$SOUND_EXT';
+	}
+
+	inline static public function voices(song:String)
+	{
+		return 'songs:assets/songs/${song.toLowerCase()}/Voices.$SOUND_EXT';
 	}
 
 	/*inline static public function font(key:String)

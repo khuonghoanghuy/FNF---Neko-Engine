@@ -1,6 +1,7 @@
 package;
 
 import flixel.FlxGame;
+import openfl.display.FPS;
 import openfl.display.Sprite;
 import states.TitleState;
 #if debug
@@ -13,6 +14,7 @@ class Main extends Sprite
 	{
 		super();
 		addChild(new FlxGame(0, 0, TitleState));
+		addChild(new FPS(0, 0, 0xFFFFFF));
 		#if debug
 		FlxStudio.create();
 		#end
